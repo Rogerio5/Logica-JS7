@@ -8,48 +8,57 @@
   <p>Compreender esses conceitos não apenas facilita o aprendizado de novas linguagens e tecnologias, mas também capacita você a <strong>criar soluções inovadoras</strong>, <strong>depurar eficientemente</strong> e <strong>manter a qualidade</strong> ao longo do ciclo de vida do software.</p>
   <p>Portanto, investir tempo nesses princípios desde cedo é fundamental para <strong>construir uma base sólida e bem-sucedida</strong> no campo da programação.</p>
 
-  <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Lista de Nomes</title>
-</head>
-<body>
-  <h2>Gerenciador de Lista</h2>
+  <div class="desafio">
+  <h2>Desafio 1 — Lista Vazia</h2>
+  <div class="enunciado">Crie uma lista vazia chamada <code>listaGenerica</code>.</div>
+  <pre>
+let listaGenerica = [];
+  </pre>
+  <div class="resposta">🟢 Exemplo: lista criada, mas ainda sem elementos.</div>
+</div>
 
-  <input type="text" id="nomeInput" placeholder="Digite um nome">
-  <button onclick="adicionarNome()">Adicionar</button><br><br>
+<div class="desafio">
+  <h2>Desafio 2 — Linguagens de Programação</h2>
+  <div class="enunciado">Crie uma lista chamada <code>linguagensDeProgramacao</code> com os elementos: 'JavaScript', 'C', 'C++', 'Kotlin' e 'Python'.</div>
+  <pre>
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+  </pre>
+  <div class="resposta">🟢 Exemplo: Lista criada com 5 linguagens inicialmente.</div>
+</div>
 
-  <input type="number" id="indiceInput" placeholder="Índice do nome">
-  <button onclick="verNomePorIndice()">Ver nome pelo índice</button><br><br>
+<div class="desafio">
+  <h2>Desafio 3 — Adicionar Linguagens</h2>
+  <div class="enunciado">Adicione os elementos 'Java', 'Ruby' e 'GoLang' à lista <code>linguagensDeProgramacao</code>.</div>
+  <pre>
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang');
+  </pre>
+  <div class="resposta">🟢 Exemplo: Lista atualizada com 8 linguagens.</div>
+</div>
 
-  <button onclick="exibirLista()">Exibir Lista Completa</button>
+<div class="desafio">
+  <h2>Desafio 4 — Primeiro Nome</h2>
+  <div class="enunciado">Crie uma lista com 3 nomes e exiba apenas o primeiro elemento no console.</div>
+  <pre>
+let nomes = ['Ana', 'Bruno', 'Carlos'];
+console.log(nomes[0]);
+  </pre>
+  <div class="resposta">🟢 Exemplo: Saída será <code>Ana</code>.</div>
+</div>
 
-  <div id="resultado" style="margin-top: 20px;"></div>
+<div class="desafio">
+  <h2>Desafio 5 — Segundo Nome</h2>
+  <div class="enunciado">Exiba apenas o segundo elemento de uma lista com 3 nomes.</div>
+  <pre>
+console.log(nomes[1]);
+  </pre>
+  <div class="resposta">🟢 Exemplo: Saída será <code>Bruno</code>.</div>
+</div>
 
-  <script>
-    let listaNomes = [];
-
-    function adicionarNome() {
-      const nome = document.getElementById("nomeInput").value;
-      if (nome.trim() !== "") {
-        listaNomes.push(nome);
-        document.getElementById("resultado").innerText = `Nome "${nome}" adicionado!`;
-      }
-    }
-
-    function exibirLista() {
-      document.getElementById("resultado").innerText = `Lista completa: ${listaNomes.join(", ")}`;
-    }
-
-    function verNomePorIndice() {
-      const indice = parseInt(document.getElementById("indiceInput").value);
-      if (indice >= 0 && indice < listaNomes.length) {
-        document.getElementById("resultado").innerText = `Nome no índice ${indice}: ${listaNomes[indice]}`;
-      } else {
-        document.getElementById("resultado").innerText = "Índice inválido!";
-      }
-    }
-  </script>
-</body>
-</html>
+<div class="desafio">
+  <h2>Desafio 6 — Último Nome</h2>
+  <div class="enunciado">Exiba apenas o último elemento da lista de nomes.</div>
+  <pre>
+console.log(nomes[nomes.length - 1]);
+  </pre>
+  <div class="resposta">🟢 Exemplo: Saída será <code>Carlos</code>.</div>
+</div>
